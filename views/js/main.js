@@ -126,18 +126,21 @@ pizzaIngredients.cheeses = [
   "Roquefort Cheese",
   "Romano Cheese",
   "Ricotta Cheese",
-  "Smoked Gouda"
+  "Smoked Gouda",
+  "Fresh Mozarella"
 ];
 pizzaIngredients.sauces = [
   "Red Sauce",
   "Marinara",
   "BBQ Sauce",
   "No Sauce",
-  "Hot Sauce"
+  "Hot Sauce",
+  "White Sauce"
 ];
 pizzaIngredients.crusts = [
   "White Crust",
-  "Whole Wheat Crust",
+  "Thin Crust",
+  "Deep Dish",
   "Flatbread Crust",
   "Stuffed Crust"
 ];
@@ -378,7 +381,7 @@ var pizzaElementGenerator = function(i) {
   pizzaContainer.id = "pizza" + i;                // gives each pizza element a unique id
   pizzaImageContainer.style.width="35%";
 
-  pizzaImage.src = "images/pizza.png";
+  pizzaImage.src = "images/pizza.webp";
   pizzaImage.classList.add("img-responsive");
   pizzaImageContainer.appendChild(pizzaImage);
   pizzaContainer.appendChild(pizzaImageContainer);
